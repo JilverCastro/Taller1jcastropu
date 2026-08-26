@@ -1,0 +1,49 @@
+
+<!--
+<!DOCTYPE html>	Le dice al navegador que es HTML5
+lang="es"	Idioma de la página (accesibilidad y SEO)
+<meta charset="UTF-8">	Soporte de tildes y ñ
+<meta name="viewport">	Base para diseño responsive (lo usaremos con CSS)
+<header>	Cabecera semántica del sitio
+<nav aria-label="...">	Menú con nombre para lectores de pantalla
+aria-current="page"	Indica cuál enlace es la página actual
+<main>	Contenido principal (uno solo por página)
+<footer> + <address>	Pie de página con datos de contacto
+--->
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jilver Castro - Desarrollo Web Profesional</title>
+        <meta name="description" content="Servicios profesionales de desarrollo web y diseño UX/UI." />
+        <meta name="author" content="Jilver Castro" />
+    </head>
+    <body>
+        <header>
+            <h1>Jilver Castro</h1>
+            <p>Desarrollo Web Profesional</p>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="/index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="/subwebs/Servicios.html">Servicios</a></li>
+                    <li><a href="/subwebs/Portafolio.html">Portafolio</a></li>
+                    <li><a href="/subwebs/Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Aquí va el contenido único de cada página -->
+        </main>
+
+        <footer>
+            <address>
+                <p><a href="mailto:contacto@jilvercastro.com">contacto@jilvercastro.com</a></p>
+                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </address>
+            <p>&copy; 2026 JilverCastro. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
