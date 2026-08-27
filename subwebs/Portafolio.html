@@ -22,7 +22,69 @@
         </header>
 
         <main>
-            <!-- Aquí va el contenido único de cada página -->
+            <!--    
+            alt="..."	Describe la imagen para accesibilidad y SEO
+            width / height	Reserva espacio y evita saltos de layout
+            loading="lazy"	Carga diferida — mejora rendimiento
+            figure> + <figcaption>	Agrupa imagen con su pie descriptivo
+            Mal: alt="imagen1" · Bien: alt="Captura de tienda online con catálogo de productos"
+            -->
+            <h2>Nuestro portafolio</h2>
+            <p>Algunos proyectos destacados. Cada uno refleja nuestro enfoque en calidad y claridad.</p>
+
+            <section id="proyectos-destacados">
+                <h3>Proyectos destacados</h3>
+
+                <article>
+                    <h4>E-commerce InnovateCorp</h4>
+                    <figure>
+                        <img
+                            src="https://picsum.photos/seed/ecommerce/640/360"
+                            alt="Captura de tienda online InnovateCorp con catálogo de productos"
+                            width="640"
+                            height="360"
+                            loading="lazy"
+                        />
+                        <figcaption>Tienda online con catálogo y checkout</figcaption>
+                    </figure>
+                    <p><strong>Cliente:</strong> InnovateCorp</p>
+                    <p><strong>Tipo:</strong> Tienda online</p>
+                    <p>Plataforma de e-commerce con catálogo, carrito y panel de administración.</p>
+                    <h5>Tecnologías</h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>Portal educativo LearnHub</h4>
+                    <figure>
+                        <img
+                            src="https://picsum.photos/seed/learnhub/640/360"
+                            alt="Interfaz del portal educativo LearnHub con listado de cursos"
+                            width="640"
+                            height="360"
+                            loading="lazy"
+                        />
+                        <figcaption>Portal de cursos con perfiles de estudiante</figcaption>
+                    </figure>
+                    <p><strong>Cliente:</strong> LearnHub</p>
+                    <p><strong>Tipo:</strong> Plataforma educativa</p>
+                    <p>Sitio de cursos con listados, fichas de contenido y formulario de inscripción.</p>
+                    <h5>Tecnologías</h5>
+                    <ul>
+                        <li>HTML5 semántico</li>
+                        <li>Formularios con validación nativa</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="cta">
+                <h3>¿Quieres un proyecto así?</h3>
+                <p><a href="contacto.html">Cuéntanos tu idea</a></p>
+            </section>
         </main>
 
         <footer>

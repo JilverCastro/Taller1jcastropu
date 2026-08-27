@@ -22,7 +22,140 @@
         </header>
 
         <main>
-            <!-- Aquí va el contenido único de cada página -->
+            <!--<form>	Contenedor del formulario
+                action="#"	Destino del envío (placeholder; no hay backend hoy)
+                method="post"	Método HTTP estándar para envío de datos
+                <fieldset> + <legend>	Agrupa campos relacionados visual y semánticamente
+            -->
+
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente? Escríbenos. Ofrecemos consulta gratuita.</p>
+
+            <section id="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <!-- campos personales 
+                        required	Campo obligatorio — el navegador bloquea el envío si está vacío
+                        minlength / maxlength	Longitud mínima y máxima
+                        pattern	Expresión regular validada por el navegador
+                        title	Mensaje de ayuda cuando falla la validación
+                        aria-describedby	Conecta el input con el texto de ayuda (<small>) 
+                        -->
+                        <div>
+                            <label for="nombre">Nombre completo *</label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                required
+                                minlength="2"
+                                maxlength="50"
+                                pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,50}"
+                                title="Solo letras y espacios (2 a 50 caracteres)"
+                                aria-describedby="nombre-help"
+                            />
+                            <small id="nombre-help">Mínimo 2 caracteres</small>
+                        </div>
+
+                        <div>
+                            <label for="email">Correo electrónico *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                aria-describedby="email-help"
+                            />
+                            <small id="email-help">Ejemplo: nombre@empresa.com</small>
+                        </div>
+
+                        <div>
+                            <label for="telefono">Teléfono</label>
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                pattern="[0-9+\s\-()]{7,20}"
+                                title="Incluye código de país si es posible"
+                                aria-describedby="telefono-help"
+                            />
+                            <small id="telefono-help">Ejemplo: +57 300 123 4567</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tu proyecto</legend>
+                        <!-- campos del proyecto -->
+                        <div>
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="presupuesto">Solicitar presupuesto</option>
+                                <option value="soporte">Soporte técnico</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="fecha">Fecha preferida de contacto</label>
+                            <input type="date" id="fecha" name="fecha" min="2026-01-01" />
+                        </div>
+
+                        <div>
+                            <label for="presupuesto">Presupuesto aproximado (USD)</label>
+                            <input type="number" id="presupuesto" name="presupuesto" min="100" max="50000" step="100" />
+                        </div>
+
+                        <div>
+                            <label for="urgencia">Urgencia (1–10)</label>
+                            <input type="range" id="urgencia" name="urgencia" min="1" max="10" value="5" />
+                        </div>
+
+                        <div>
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="5"
+                                required
+                                minlength="10"
+                                maxlength="500"
+                                aria-describedby="mensaje-help"
+                            ></textarea>
+                            <small id="mensaje-help">Entre 10 y 500 caracteres</small>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="newsletter" value="si" />
+                                Quiero recibir novedades
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </section>
+
+            <aside>
+                <h3>Otros canales</h3>
+                <address>
+                    <p>Email: <a href="mailto:contacto@techsolutions.com">contacto@techsolutions.com</a></p>
+                    <p>Teléfono: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p>123 Tech Street, Digital City</p>
+                </address>
+                <h4>Horario</h4>
+                <ul>
+                    <li>Lunes a viernes: 9:00 – 18:00</li>
+                    <li>Sábado: 10:00 – 14:00</li>
+                    <li>Domingo: cerrado</li>
+                </ul>
+            </aside>
         </main>
 
         <footer>
