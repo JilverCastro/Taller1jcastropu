@@ -23,14 +23,10 @@ aria-current="page"	Indica cuál enlace es la página actual
         <header>
             <h1>Jilver Castro</h1>
             <p>Desarrollo Web Profesional</p>
-            <nav aria-label="Navegación principal">
-                <ul>
-                    <li><a href="/index.html" aria-current="page">Inicio</a></li>
-                    <li><a href="/subwebs/Servicios.html">Servicios</a></li>
-                    <li><a href="/subwebs/Portafolio.html">Portafolio</a></li>
-                    <li><a href="/subwebs/Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+
+            <!-- Contenedor para el menú de navegación que se cargará dinámicamente -->
+            <div id="navbar"></div>
+
         </header>
 
         <main>
@@ -43,12 +39,10 @@ aria-current="page"	Indica cuál enlace es la página actual
             </section>
         </main>
 
-        <footer>
-            <address>
-                <p><a href="mailto:contacto@jilvercastro.com">contacto@jilvercastro.com</a></p>
-                <p><a href="tel:+1234567890">+1 (233) 567-890</a></p>
-            </address>
-            <p>&copy; 2026 JilverCastro. Todos los derechos reservados.</p>
-        </footer>
+        <!-- Contenedor para el pie de página que se cargará dinámicamente -->
+        <div id="footer"></div>
+
+        <!-- Carga del script que incluye el menú de navegación y el pie de página -->
+        <script src="/js/includes.js"></script>
     </body>
 </html>
