@@ -1,0 +1,72 @@
+/* VARIABLES CSS */
+
+:root {
+    /* Colores principales */
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --color-accent: #e74c3c;
+
+    /* Colores de texto */
+    --color-text-dark: #2c3e50;
+    --color-text-light: #7f8c8d;
+    --color-text-white: #ffffff;
+
+    /* Colores de fondo */
+    --color-bg-light: #ecf0f1;
+    --color-bg-white: #ffffff;
+
+    /* Tipografía */
+    --font-family-base: "Arial", sans-serif;
+    --font-family-heading: "Arial", sans-serif;
+
+    /* Tamaños de fuente */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem; /* 36px */
+
+    /* Espaciado */
+    --space-1: 0.25rem; /* 4px */
+    --space-2: 0.5rem; /* 8px */
+    --space-3: 0.75rem; /* 12px */
+    --space-4: 1rem; /* 16px */
+    --space-6: 1.5rem; /* 24px */
+    --space-8: 2rem; /* 32px */
+    --space-12: 3rem; /* 48px */
+    --space-16: 4rem; /* 64px */
+
+    /* Bordes redondeados */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* RESET CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-white);
+}
